@@ -1,0 +1,12 @@
+// cl-math-special-trans-stage-8364: Test Suite
+import "../spcl_8364.zk"
+
+fn test_run():
+    res := special_approx_stage_8364(5.0, 2)
+    diff := res - 172.3800
+    if diff < 0.0: diff = 0.0 - diff
+    if diff > 0.01: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-math-special-trans-stage-8364!")

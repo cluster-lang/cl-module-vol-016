@@ -1,0 +1,7 @@
+// cl-math-special-trans-stage-7114
+// Contributor: zk-mohammad <ZaidKhan-alamgir@proton.me>
+// CCFL v2.0 Terms with copyright stewardship managed by Mohammad Zaid/cluster
+
+fn special_approx_stage_7114(z: float, k: int) -> float:
+    let factor: float = 1.0 + (float(k) * 0.01)
+    return (z * factor) + 142.28

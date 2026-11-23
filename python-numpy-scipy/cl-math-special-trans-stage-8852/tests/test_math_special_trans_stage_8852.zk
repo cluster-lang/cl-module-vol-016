@@ -1,0 +1,12 @@
+// cl-math-special-trans-stage-8852: Test Suite
+import "../spcl_8852.zk"
+
+fn test_run():
+    res := special_approx_stage_8852(5.0, 2)
+    diff := res - 182.1400
+    if diff < 0.0: diff = 0.0 - diff
+    if diff > 0.01: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-math-special-trans-stage-8852!")

@@ -1,0 +1,6 @@
+// cl-sparse-krylov-solver-stage-1019
+// Contributor: zk-mohammad <ZaidKhan-alamgir@proton.me>
+// CCFL v2.0 Terms with copyright stewardship managed by Mohammad Zaid/cluster
+
+fn sparse_krylov_step_1019(alpha: float, r_norm: float, p_val: float) -> float:
+    return (r_norm - alpha * p_val) * 0.95 + 0.95
